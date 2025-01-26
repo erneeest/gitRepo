@@ -3,38 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eh</title>
+    <title>basicG</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <a href="#" onclick="hello()" width="300px" height ="300px">Hi!</button>
-    <script>
+    <header>
+        <nav>
+            <div class="web-logo">
+                <img src="./images/websiteLogo.svg" alt="web-image" width="50px">
+                <span class="web-logo-text">basicG</span>
+            </div>
+    
+            <ul class="nav-buttons">
+                <li><a href="RPS.html" target="_self">RockPaperScissor</a></li>
+                <li><a href="#">Chess</a></li>
+            </ul>
+        </nav>
+
+        <section class="hero-section">
+            <div class="hero-div">
+                <h2>You can play your fav game in a browser!</h2>
+            </div>
+        </section>
+
+        <footer>
+            <div class="web-logo">
+                <img src="./images/websiteLogo.svg" alt="web-image" width="50px">
+                <span class="web-logo-text">basicG</span>
+            </div>
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com/Talagtag.Ernest.Niel.P"><img class="social-logo" src="./images/facebook.svg" alt="facebook"></a></li>
+                <li><a href="https://www.instagram.com/_erneeest/"><img class="social-logo" src="./images/instagram.svg" alt="instagram"></a></li>
+                <li><a href="https://www.linkedin.com/in/ernest-talagtag-039ba22a2/"><img class="social-logo" src="./images/linkedin.svg" alt="linkedin"></a></li>
+                <li><a href="https://www.tiktok.com/@_erneeest"><img class="social-logo" src="./images/tiktok.svg" alt="tiktok"></a></li>
+                <li><a href="https://www.youtube.com/@ErnestAnimated"><img class="social-logo" src="./images/youtube.svg" alt="youtube"></a></li>
+                <li><a href="https://github.com/erneeest"><img class="social-logo" src="./images/github.svg" alt="github"></a></li>
+            </ul>
+        </footer>
+    </header>
+    
+
+
+    <script src="script.js"></script>
+
+    <!-- <script>
         function hello(){
             alert('Hello World!');
         }
         let calc = '5'+' + '+'2';
         console.log(eval(calc));
-
-        let randomNumber = Math.floor(Math.random()*2)+1; 
-        console.log(randomNumber);
-
-        if(randomNumber === '2'){
-            console.log('True');
-        }else{
-            console.log('False');
-        }
-
-        let damage = 3;
-        damage <= 0? damage = 0: 'default';
-        console.log(damage);
-
-        const globalConst = 5;
-
-        if(true){
-            const localConst = 1;
-            console.log(globalConst);
-            console.log(localConst);
-        }
-    </script>
+    </script> -->
 </body>
 </html>

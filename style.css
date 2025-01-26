@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: #212529;
+}
+.main-container{
+    width: 90%;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+.hero-section{
+    width: 100%;
+}
+.game-play{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10rem;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 900;
+    color: #212529;
+    font-size: 5rem;
+    padding: 5rem 10rem;
+    border-radius: 10rem;
+    border: none;
+    transition: .3s;
+
+}
+.btn:hover{
+   
+    cursor: pointer;
+    background: rgb(128, 186, 128);
+    
+}
+.btn:active{
+    background: rgb(92, 142, 120);
+}
+
+
