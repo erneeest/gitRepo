@@ -1,10 +1,15 @@
 
+const score = {
+    wins: 0,
+    losses: 0,
+    draws: 0
+}
+
+
 function userMove(userMove){
     const computer = computerMove();
 
     compare(userMove, computer);
-    
-
 }
 
 function computerMove(){
@@ -24,20 +29,27 @@ function computerMove(){
 
 function compare(userMove, computerMove){
     if(userMove === computerMove){
-        alert(`Your move is ${userMove}, Computer move is ${computerMove}\nTie`);
+        score.draws++;
+        alert(`Your move is ${userMove}, Computer move is ${computerMove}\nTie\nwins${score.wins}, losses: ${score.losses}, wins: ${score.draws}`);
     }else if(userMove === 'Paper' && computerMove === 'Rock'){
-        alert(`Your move is ${userMove}, Computer move is ${computerMove}\nYou Win`);
+        score.wins++;
+        alert(`Your move is ${userMove}, Computer move is ${computerMove}\nYou Win\nwins${score.wins}, losses: ${score.losses}, wins: ${score.draws}`);
     }else if(userMove === 'Rock' && computerMove === 'Scissor'){
-        alert(`Your move is ${userMove}, Computer move is ${computerMove}\nYou Win`);
+        score.wins++;
+        alert(`Your move is ${userMove}, Computer move is ${computerMove}\nYou Win\nwins${score.wins}, losses: ${score.losses}, wins: ${score.draws}`);
     }else if(userMove === 'Scissor' && computerMove === 'Paper'){
-        alert(`Your move is ${userMove}, Computer move is ${computerMove}\nYou Win`);
+        score.wins++;
+        alert(`Your move is ${userMove}, Computer move is ${computerMove}\nYou Win\nwins${score.wins}, losses: ${score.losses}, wins: ${score.draws}`);
     }
     
     else if(userMove === 'Paper' && computerMove === 'Scissor'){
-        alert(`Your move is ${userMove}, Computer move is ${computerMove}\nYou Lose`);
+        score.losses++;
+        alert(`Your move is ${userMove}, Computer move is ${computerMove}\nYou Lose\nwins${score.wins}, losses: ${score.losses}, wins: ${score.draws}`);
     }else if(userMove === 'Scissor' && computerMove === 'Rock'){
-        alert(`Your move is ${userMove}, Computer move is ${computerMove}\nYou Lose`);
+        score.losses++;
+        alert(`Your move is ${userMove}, Computer move is ${computerMove}\nYou Lose\nwins${score.wins}, losses: ${score.losses}, wins: ${score.draws}`);
     }else if(userMove === 'Rock' && computerMove === 'Paper'){
-        alert(`Your move is ${userMove}, Computer move is ${computerMove}\nYou Lose`);
+        score.losses++;
+        alert(`Your move is ${userMove}, Computer move is ${computerMove}\nYou Lose\nwins${score.wins}, losses: ${score.losses}, wins: ${score.draws}`);
     }
 }
